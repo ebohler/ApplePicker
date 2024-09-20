@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -301,6 +302,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a74072858862246bf2a05c13fe6884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 300548235943539554, guid: d9c86b8a1f30c314fb723e490a7ca6bd, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &6550285581973125718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,14 +325,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1981871079, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981871079, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
-      propertyPath: changeDirChance
-      value: 0.02
-      objectReference: {fileID: 0}
     - target: {fileID: 6550285582814022064, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -363,10 +372,6 @@ PrefabInstance:
     - target: {fileID: 6550285582814022066, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
       propertyPath: m_Name
       value: AppleTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 6550285582814022067, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e3a6e89505f86941a22f0961e8d9c40, type: 3}
