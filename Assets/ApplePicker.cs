@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ApplePicker : MonoBehaviour
 {
+
     [Header("Inscribed")]
     public GameObject basketPrefab;
     public int numBaskets = 4;
@@ -41,13 +42,13 @@ public class ApplePicker : MonoBehaviour
 
         if (basketList.Count == 0)
         {
-            SceneManager.LoadScene("_Scene_0");
+            SceneManager.LoadScene("_GameOver");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

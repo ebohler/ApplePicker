@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoundCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public ScoreCounter scoreCounter;
+    public int round = 1;
+    public Text roundCounterText;
+
     void Start()
     {
-        
+        roundCounterText = GetComponent<Text>();
     }
 
-    // Update is called once per frame
+    public void IncreaseRound()
+    {
+        round++;
+    }
+
     void Update()
     {
-        
+        roundCounterText.text = round.ToString("Round #");
     }
 }
