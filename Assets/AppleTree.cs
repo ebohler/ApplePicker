@@ -12,7 +12,7 @@ public class AppleTree : MonoBehaviour
     public float leftAndRightEdge = 10f;
     public float changeDirChance = 0.1f;
     public float appleDropDelay = 1f;
-    public float bombChance = 0.5f;
+    public float bombChance = 0.55f;
 
 
     void Start()
