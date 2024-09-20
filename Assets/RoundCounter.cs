@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class RoundCounter : MonoBehaviour
 {
-    public ScoreCounter scoreCounter;
     public int round = 1;
     public Text roundCounterText;
 

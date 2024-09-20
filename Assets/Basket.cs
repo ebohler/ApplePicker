@@ -7,7 +7,7 @@ public class Basket : MonoBehaviour
 {
     public ScoreCounter scoreCounter;
     public RoundCounter roundCounter;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +41,7 @@ public class Basket : MonoBehaviour
             Destroy(collidedWith);
             scoreCounter.score += 100;
             HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
+            
             if (scoreCounter.score % 500 == 0)
             {
                 roundCounter.IncreaseRound(); // Increase the round count
